@@ -1,0 +1,16 @@
+[INFO ] 2023-11-10 06:48:18 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39976
+[INFO ] 2023-11-10 06:56:49 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43597
+[INFO ] 2023-11-10 07:00:55 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37501
+[INFO ] 2023-11-10 07:05:09 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46552
+[INFO ] 2023-11-10 07:25:27 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32783
+[INFO ] 2023-11-10 07:30:08 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44291
+[INFO ] 2023-11-10 07:33:51 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36788
+[INFO ] 2023-11-10 07:37:02 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38967
+[INFO ] 2023-11-11 22:42:14 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39263
+[INFO ] 2023-11-11 22:50:44 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33096
+[INFO ] 2023-11-11 22:58:54 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45934
+[ERROR] 2023-11-11 23:16:10 [com.cadence.ufi.service.UFIDataSetManipulationServices] [AWT-EventQueue-0] - ASSERTION Assertion: dataset is null in UFIDataSetManipulationServices.getChildrenNodesDataset()
+[ERROR] 2023-11-11 23:16:10 [com.cadence.ufi.service.UFIDataSetManipulationServices] [AWT-EventQueue-0] - ASSERTION Assertion: dataset is null in UFIDataSetManipulationServices.getChildrenNodesDataset()
+[ERROR] 2023-11-11 23:16:10 [com.cadence.ufi.service.UFIDataSetManipulationServices] [AWT-EventQueue-0] - ASSERTION Assertion: dataset is null in UFIDataSetManipulationServices.getChildrenNodesDataset()
+[ERROR] 2023-11-11 23:16:10 [com.cadence.ufi.service.UFIDataSetManipulationServices] [AWT-EventQueue-0] - ASSERTION Assertion: dataset is null in UFIDataSetManipulationServices.getChildrenNodesDataset()
+[ERROR] 2023-11-11 23:16:10 [com.cadence.ufi.service.UFIDataSetManipulationServices] [AWT-EventQueue-0] - ASSERTION Assertion: dataset is null in UFIDataSetManipulationServices.getChildrenNodesDataset()

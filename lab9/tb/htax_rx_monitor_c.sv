@@ -15,6 +15,17 @@ class htax_rx_monitor_c extends uvm_monitor;
 	htax_rx_mon_packet_c rx_mon_packet;
 	int pkt_len;
 
+  covergroup cover_htax_packet;
+    option.per_instance = 1;
+    option.name = "cover_htax_packet";
+
+    TX_VC_REQ : coverpoint htax_rx_intf.rx_vc_req  {
+                                            					bins rx_vc_req[3] = {'b01,'b10,'b11};
+										illegal_bins illegal_rx_vc_req = {'b0};
+                                          					}
+
+  endgroup
+	
 	function new (string name, uvm_component parent);
 		super.new(name, parent);
 		rx_collect_port = new ("rx_collect_port", this);

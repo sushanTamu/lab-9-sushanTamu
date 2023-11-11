@@ -21,24 +21,35 @@ class htax_tx_monitor_c extends uvm_monitor;
                                           					}
 
     // TO DO : Coverpoint for htax packet field : vc (include vc=0 in illegal bin)
-		//VC : 	
+    VC : coverpoint tx_mon_packet.vc  {
+										illegal_bins illegal_vc[] = {0};
+                                            					bins vc[] = {[1:3]};
+                                          					}
+
 
 
 
     // TO DO : Coverpoint for htax packet field : length (Divide range [3:63] into 16 bins)
-		//LENGTH : 
+    LENGTH : coverpoint tx_mon_packet.length  {
+                                            					bins length[16] = {[3:63]};
+                                          					}
+
 
 
 
 
 		// Coverpoints for Crosses
 		// TO DO : DEST_PORT cross VC
+    VCxDEST_PORT : cross VC, DEST_PORT;
 
+	
 
 		// TO DO : DEST_PORT cross LENGTH
+    LENGTHxDEST_PORT : cross LENGTH, DEST_PORT;
 
 
 		// TO DO : VC cross LENGTH
+    VCxLENGTH : cross VC, LENGTH;
 
 
   endgroup
@@ -50,16 +61,29 @@ class htax_tx_monitor_c extends uvm_monitor;
 		
 		// TO DO : Coverpoint for tx_outport_req: covered all the values 0001,0010,0100,1000
 		
+    TX_OUTPORT_REQ : coverpoint htax_tx_intf.tx_outport_req  {
+                                            					bins tx_outport_req[4] = {'b0001,'b0010,'b0100,'b1000};
+                                          					}
+
 
 
 
 		
 		// TO DO : Coverpoint for tx_vc_req: All the VCs are requested atleast once. Ignore what is not allowed, or put it as illegal
 
+    TX_VC_REQ : coverpoint htax_tx_intf.tx_vc_req  {
+                                            					bins tx_vc_req[3] = {'b01,'b10,'b11};
+										illegal_bins illegal_tx_vc_req = {'b0};
+                                          					}
+
 
 
 		
 		// TO DO : Coverpoint for tx_vc_gnt: All the virtual channels are granted atleast once.
+
+    TX_VC_GNT : coverpoint htax_tx_intf.tx_vc_gnt  {
+                                            					bins tx_vc_gnt[3] = {'b01,'b10,'b11};
+                                          					}
 
 
 
